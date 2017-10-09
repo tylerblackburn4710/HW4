@@ -4,10 +4,10 @@ package model;
 public class NFLPlayers {
  
     private int PLAYERID;
-    private String PLAYERNAME;
-    private String TEAMNAME;
+    private string PLAYERNAME;
+    private string TEAMNAME;
     private int AGE;
-    private String POSISTION;
+    private string POSISTION;
 
     
      
@@ -20,7 +20,7 @@ public class NFLPlayers {
     }
     
     
-    public NFLPlayers(int PLAYERID, String PLAYERNAME, String TEAMNAME, int AGE, String POSISTION) {
+    public NFLPlayers(int PLAYERID, string PLAYERNAME, string TEAMNAME, int AGE, string POSISTION) {
         this.PLAYERID = PLAYERID;
         this.PLAYERNAME = PLAYERNAME;
         this.TEAMNAME = TEAMNAME;
@@ -36,19 +36,19 @@ public class NFLPlayers {
         this.PLAYERID = PLAYERID;
     }
 
-    public String getPLAYERNAME() {
+    public string getPLAYERNAME() {
         return PLAYERNAME;
     }
 
-    public void setPLAYERNAME(String PLAYERNAME) {
+    public void setPLAYERNAME(string PLAYERNAME) {
         this.PLAYERNAME = PLAYERNAME;
     }
 
-    public String getTEAMNAME() {
+    public string getTEAMNAME() {
         return TEAMNAME;
     }
 
-    public void setTEAMNAME(String TEAMNAME) {
+    public void setTEAMNAME(string TEAMNAME) {
         this.TEAMNAME = TEAMNAME;
     }
 
@@ -60,11 +60,11 @@ public class NFLPlayers {
         this.AGE = AGE;
     }
 
-    public String getPOSISTION() {
+    public string getPOSISTION() {
         return POSISTION;
     }
 
-    public void setPOSISTION(String POSISTION) {
+    public void setPOSISTION(string POSISTION) {
         this.POSISTION = POSISTION;
     }
 
