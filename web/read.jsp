@@ -12,5 +12,8 @@
     <body>
         <h1>Tyler's NFL Players Database</h1>
         <%= table %>
+        
+        <br><br>
+        <a href ="add">Add a New Player</a>
     </body>
 </html>
