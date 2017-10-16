@@ -97,6 +97,11 @@ public class ReadQuery {
             table += "<td>";
                     table += nflplayer.getPOSISTION();
             table += "</td>";
+            
+            table += "<td>";
+            table += "<a href=delete?PLAYERID=" + nflplayer.getPLAYERID() + "> Delete </a>";
+            table += "</td>";        
+          
         
          table += "</tr>";
        }
