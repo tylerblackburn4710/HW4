@@ -4,6 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>NFL Players</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <h1>NFL Players Database</h1>
