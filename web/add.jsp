@@ -1,9 +1,3 @@
-<%-- 
-    Document   : add
-    Created on : Oct 16, 2017, 11:32:01 AM
-    Author     : tblackburn
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
