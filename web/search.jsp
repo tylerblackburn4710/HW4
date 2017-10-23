@@ -7,6 +7,17 @@
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        
+         <div class="wrap">
+        
+           <%@ include file="includes/header.jsp" %>
+            
+            <%@ include file="includes/menu.jsp" %>
+            
+            <div class="main">
+        
+        
+        
         <h1>Search Players</h1>
         
         <form name="searchForm" action="search" method="get">
@@ -18,5 +29,10 @@
         
         
         </form>
+        
+            </div>
+            <%@ include file="includes/footer.jsp" %>
+
+         </div>
     </body>
 </html>
