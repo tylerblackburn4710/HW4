@@ -6,17 +6,22 @@
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/dbHelpers/AddQuery.java</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/web/css/style.css</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/model/string.java</file>
-            <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/web/read.jsp</file>
+            <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/read.jsp</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/model/NFLPlayers.java</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/Contoller/AddForm.java</file>
+            <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/SearchQuery.java</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/web/add.jsp</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/Contoller/AddServlet.java</file>
+            <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/dbHelpers/UpdateQuery.java</file>
+            <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/Contoller/SearchServlet.java</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/Contoller/Read.java</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/dbHelpers/DeleteQuery.java</file>
+            <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/web/updateForm.jsp</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/DeleteServlet.java</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/dbHelpers/dbConn.properties</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/dbHelpers/ReadQuery.java</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/src/java/Contoller/DeleteServlet.java</file>
+            <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/search.jsp</file>
             <file>file://home.iowa.uiowa.edu/tblackburn/NetBeansProjects/NFLPlayers/web/index.jsp</file>
         </group>
     </open-files>
