@@ -13,25 +13,25 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.NFLPlayers;
 
-public class ReadQuery {
-   
-   private Connection conn;
-   private ResultSet results;
-   
-   
-   public ReadQuery(){
-  
-    Properties props = new Properties(); //MWC
+
+public class SearchQuery {
+    
+    private Connection conn;
+    private ResultSet results;
+    
+    public SearchQuery() {
+    
+        Properties props = new Properties(); //MWC
     InputStream instr = getClass().getResourceAsStream("dbConn.properties");
        try {
            props.load(instr);
        } catch (IOException ex) {
-           Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+           Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
        }
        try {
            instr.close();
        } catch (IOException ex) {
-           Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+           Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
        }
     
     String driver = props.getProperty("driver.name");
@@ -41,29 +41,34 @@ public class ReadQuery {
        try {
            Class.forName(driver);
        } catch (ClassNotFoundException ex) {
-           Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+           Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
        }
        try {
            conn = DriverManager.getConnection(url, username, passwd);
        } catch (SQLException ex) {
-           Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+           Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
        }
-       
-   }
-   
-   public void doRead(){
-       try {
-           String query = "Select * from NFLPLAYERS ORDER BY PLAYERID ASC";
-           
-           PreparedStatement ps = conn.prepareStatement(query);
-           this.results = ps.executeQuery();
-       } catch (SQLException ex) {
-           Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
-       }
-   }
-   
-   
-   public String getHTMLtable() throws SQLException{
+    
+    
+    }
+    
+    
+public void doSearch(String PLAYERNAME){
+        
+        try {
+            String query = "SELECT * FROM NFLPlayers WHERE UPPER(PLAYERNAME) LIKE ? ORDER BY PLAYERNAME ASC";
+            
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setString(1, "%" + PLAYERNAME.toUpperCase() + "%");
+            this.results = ps.executeQuery();
+        } catch (SQLException ex) {
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    
+}
+
+
+ public String getHTMLtable() throws SQLException{
    
        String table = "";
        table += "<table border=1>";
@@ -114,6 +119,15 @@ public class ReadQuery {
        
    }
 
-   
+    public String getHTMLTable() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
+    
+    
+   
+    
+    
+    
+    
 }

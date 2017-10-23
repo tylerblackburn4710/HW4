@@ -4,6 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     
     <% String table = (String) request.getAttribute("table"); %>
@@ -11,5 +12,10 @@
     <body>
         <h1>Tyler's NFL Players Database</h1>
         <%= table %>
+        
+        <br><br>
+        <a href ="add">Add a New Player</a>
+        <br><br>
+        <a href="search.jsp">Search Players</a>
     </body>
 </html>

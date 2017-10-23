@@ -10,5 +10,7 @@
         <h1>NFL Players Database</h1>
         
         <a href="read">View all NFL Players</a>
+        <br><br>
+        <a href="search.jsp">Search Players</a>
     </body>
 </html>
